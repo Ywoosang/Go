@@ -14,12 +14,14 @@ func main() {
 	var f, g, h int = 1, 2, 3 // 선언과 동시 초기화
 	var i float32 = 11.4      // 실수형 지정
 	var j string = "Go"
+	var o bool
 	var k = 5.55      // 자료형을 지정하지 않았지만 자동으로 Go 가 실수의 크기에 맞게 자료형을 선언 동시 초기화
 	var l = "Go lang" // 문자도 마찬가지로 자동으로 자료형
 	var m = true
 
+	fmt.Println("o:", o)
 	fmt.Println("a : ", a) // int 형은 선언만 했는데 0 으로 초기화 됨
-	fmt.Println("a : ", b) // string 형은 아무것도 출력되지 않음 null 공백이 들어감
+	fmt.Println("a : ", b) // string 형은 아무것도 출력되지 않음 null 로 취급됨  공백이 들어감
 	fmt.Println("a : ", c)
 	fmt.Println("a : ", d)
 	fmt.Println("a : ", e)
